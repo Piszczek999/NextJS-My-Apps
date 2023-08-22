@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        <h1 className="text-3xl">My Apps</h1>
         <NavBar />
         {children}
       </body>

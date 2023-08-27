@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav className="navbar">
       <Link href="/" className="border-r-2 pr-4 flex items-center gap-4">
         <img src="/my-apps-logo.png" alt="Logo" width={40} />
-        <h1 className="text-4xl hover:text-green-700">My Apps</h1>
+        <h1 className="text-4xl hover:text-green-600">My Apps</h1>
       </Link>
       <div className="flex justify-between grow gap-4">
         <div className="flex gap-4 ml-4 items-center">
@@ -14,6 +14,9 @@ export default function Navbar() {
           </Link>
           <Link href="/score-counter" className="nav-item">
             Score Counter
+          </Link>
+          <Link href="/random-value" className="nav-item">
+            Random Value Generator
           </Link>
         </div>
         <div className="flex gap-4 items-center">

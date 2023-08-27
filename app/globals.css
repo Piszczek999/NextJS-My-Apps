@@ -8,7 +8,7 @@ body {
 
 h1,
 h2 {
-  @apply font-bold text-green-800;
+  @apply font-bold text-green-700;
 }
 
 .navbar {
@@ -19,7 +19,7 @@ h2 {
 }
 
 .nav-item {
-  @apply text-lg border-b-2 border-green-500 border-opacity-0 transition hover:text-green-500 hover:border-opacity-100;
+  @apply text-lg border-b-2 border-green-700 border-opacity-0 transition hover:text-green-700 hover:border-opacity-100;
 }
 
 .card {
@@ -31,13 +31,17 @@ h2 {
 }
 
 .card-content {
-  @apply text-center text-gray-700 border-b-2 rounded-lg p-10 hover:bg-green-300 transition;
+  @apply text-center text-gray-700 border-b-2 rounded-lg p-10;
 }
 
 .card-footer {
-  @apply text-center mt-2 rounded-lg p-5 hover:bg-red-300 transition;
+  @apply text-center mt-2 rounded-lg p-5;
 }
 
 .btn {
   @apply border-2 rounded-full p-2 hover:shadow-md;
+}
+
+.stopped {
+  transform: scale(1.1);
 }

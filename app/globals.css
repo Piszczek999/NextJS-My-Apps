@@ -3,24 +3,27 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gray-700 m-5;
+  @apply m-4;
 }
 
 h1,
 h2 {
-  @apply font-bold text-primary m-3;
+  @apply font-bold text-green-800;
 }
 
-nav {
-  @apply flex gap-5 border-b-2;
+.navbar {
+  @apply flex
+  items-center
+  shadow-sm
+  pb-2;
 }
 
-nav a {
-  @apply p-2 text-white transition hover:bg-gray-600;
+.nav-item {
+  @apply text-lg border-b-2 border-green-500 border-opacity-0 transition hover:text-green-500 hover:border-opacity-100;
 }
 
 .card {
-  @apply bg-white border-4 rounded-xl m-1 p-1 max-w-sm grow;
+  @apply bg-white border-4 rounded-xl m-1 p-1 max-w-sm grow select-none hover:shadow-xl transition;
 }
 
 .card-title {
@@ -33,4 +36,8 @@ nav a {
 
 .card-footer {
   @apply text-center mt-2 rounded-lg p-5 hover:bg-red-300 transition;
+}
+
+.btn {
+  @apply border-2 rounded-full p-2 hover:shadow-md;
 }

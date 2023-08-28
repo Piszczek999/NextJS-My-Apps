@@ -1,9 +1,9 @@
 export default function ScoreCard({ title, score, onIncrement, onDecrement }) {
   return (
-    <div className="card hover:scale-105">
+    <div className="card max-w-sm grow hover:scale-105">
       <h2 className={`card-title ${title.color}`}>{title.value}</h2>
       <div
-        className="card-content hover:bg-green-300 transition"
+        className="card-content border-b-2 p-10 hover:bg-green-300 transition"
         onClick={onIncrement}
       >
         <p className="text-8xl">{score}</p>
